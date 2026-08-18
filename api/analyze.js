@@ -26,7 +26,7 @@ export default async function handler(req, res) {
         const apiKey = process.env.GEMINI_API_KEY;
         
         // 빠르고 저렴한 gemini-1.5-flash 모델을 사용합니다.
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${apiKey}`;
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${apiKey}`;
 
         const response = await fetch(url, {
             method: 'POST',
